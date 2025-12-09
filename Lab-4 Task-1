@@ -1,0 +1,22 @@
+class Car {
+   String brand;
+   String model;
+   double price;
+
+   Car(String var1, String var2, double var3) {
+      this.brand = var1;
+      this.model = var2;
+      this.price = var3;
+   }
+
+   void displayCar() {
+      System.out.println("Car Brand: " + this.brand);
+      System.out.println("Car Model: " + this.model);
+      System.out.println("Car Price: $" + this.price);
+   }
+
+   public static void main(String[] var0) {
+      Car var1 = new Car("GTA 6", "BMW", 400000.0);
+      var1.displayCar();
+   }
+}
